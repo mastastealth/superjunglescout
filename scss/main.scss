@@ -1,0 +1,54 @@
+@import "renorm";
+
+body {
+    background: #0F1F0F;
+}
+
+header {
+    background-color: darkgreen;
+    background: darkgreen url(../img/bg_selva.png) no-repeat center top;
+    background-size: cover;
+    height: 80%;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+        animation: float 1.4s infinite alternate ease;
+        display: inline-block;
+        max-height: 90%;
+        max-width: 90%;
+        position: relative;
+
+        @media all and (max-width: 32em) and (max-height: 32em) { top: 25%; }
+    }
+
+    @include max-break(50em) { height: 60%; }
+    @include max-break(40em) { height: 50%; }
+    @include max-break(32em) { height: 40%; }
+    @media all and (max-width: 32em) and (max-height: 32em) { height: 100%; }
+}
+
+@keyframes float {
+    from { transform: translateY(-3px); }
+    to { transform: translateY(13px); }
+}
+
+section {
+    background: #203706;
+    box-shadow: -2px 0 3px black;
+    color: #F90;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 160px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #0F1F0F;
+    color: #FC0;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+}

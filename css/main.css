@@ -87,21 +87,41 @@ textarea { overflow: auto; vertical-align: top; }
 
 html, body { height: 100%; }
 
-body { background: #0F1F0F; }
+body { background: #0F1F0F; min-width: 240px; }
 
-header { background-color: darkgreen; background: darkgreen url(../img/bg_selva.png) no-repeat center top; -webkit-background-size: cover; background-size: cover; height: 80%; overflow: hidden; text-align: center; }
-header img { -webkit-animation: float 1.4s infinite alternate ease; animation: float 1.4s infinite alternate ease; display: inline-block; max-height: 90%; max-width: 90%; position: relative; }
-@media all and (max-width: 32em) and (max-height: 32em) { header img { top: 25%; } }
+a { color: #E44C4C; }
+a:hover { color: #E4AC4C; }
+
+a, button { -webkit-transition: background 0.3s; transition: background 0.3s; }
+
+header { background-color: darkgreen; background: darkgreen url(../img/bg_selva.png) no-repeat center top; -webkit-background-size: cover; background-size: cover; height: 70%; overflow: hidden; text-align: center; }
+header img { -webkit-animation: float 1.4s infinite alternate ease; animation: float 1.4s infinite alternate ease; display: block; max-height: 90%; max-width: 90%; position: fixed; left: 50%; }
+@media all and (max-width: 32em) and (max-height: 36em) { header img { top: 25%; } }
 @media all and (max-width: 50em) { header { height: 60%; } }
 @media all and (max-width: 40em) { header { height: 50%; } }
 @media all and (max-width: 32em) { header { height: 40%; } }
-@media all and (max-width: 32em) and (max-height: 32em) { header { height: 100%; } }
+@media all and (max-width: 32em) and (max-height: 36em) { header { height: 100%; } }
 
-@-webkit-keyframes float { from { -webkit-transform: translateY(-3px); transform: translateY(-3px); }
-  to { -webkit-transform: translateY(13px); transform: translateY(13px); } }
+@-webkit-keyframes float { from { -webkit-transform: translate(-50%, -3px); transform: translate(-50%, -3px); }
+  to { -webkit-transform: translate(-50%, 13px); transform: translate(-50%, 13px); } }
 
-@keyframes float { from { -webkit-transform: translateY(-3px); transform: translateY(-3px); }
-  to { -webkit-transform: translateY(13px); transform: translateY(13px); } }
-section { background: #203706; -webkit-box-shadow: -2px 0 3px black; box-shadow: -2px 0 3px black; color: #F90; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 36px; font-weight: 300; line-height: 160px; text-align: center; text-transform: uppercase; }
+@keyframes float { from { -webkit-transform: translate(-50%, -3px); transform: translate(-50%, -3px); }
+  to { -webkit-transform: translate(-50%, 13px); transform: translate(-50%, 13px); } }
+section { background: #3A722E; -webkit-box-shadow: -2px 0 3px black; box-shadow: -2px 0 3px black; color: #E9C114; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 36px; font-weight: 300; line-height: 160%; padding: 50px 0; position: relative; text-align: center; z-index: 1; }
+@media all and (max-width: 30em) { section { padding: 20px 0; } }
+section p { margin: 0 auto; max-width: 940px; }
+section > p { margin-bottom: 80px; }
+@media all and (max-width: 40em) { section > p { font-size: 26px; line-height: 180%; margin-bottom: 30px; } }
+@media all and (max-width: 30em) { section > p { font-size: 18px; } }
+section > div { background: #23481F; margin-bottom: 100px; padding: 20px 0; }
+@media all and (max-width: 30em) { section > div { margin-bottom: 30px; } }
+section ul { font-size: 18px; line-height: 160%; margin: 0 auto; max-width: 940px; overflow: hidden; }
+@media all and (max-width: 30em) { section ul { font-size: 14px; } }
+section ul li { float: left; padding: 0 15px; width: 33%; }
+@media all and (max-width: 30em) { section ul li { float: none; margin-bottom: 30px; width: 100%; } }
+section ul li img { max-width: 100%; }
 
-footer { background: #0F1F0F; color: #FC0; font-size: 12px; line-height: 24px; text-align: center; }
+button { background: #0E2104; border: 0 none; border-radius: 10px; color: white; font-size: 24px; max-width: 90%; padding: 20px; text-transform: uppercase; -webkit-appearance: none; }
+button:hover { background: #D64C3A; }
+
+footer { background: #0F1F0F; color: #2B6225; font-size: 11px; line-height: 24px; position: relative; text-align: center; z-index: 1; }

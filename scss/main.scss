@@ -44,7 +44,7 @@ header {
 
 section {
     background: #3A722E;
-    box-shadow: -2px 0 3px black;
+    box-shadow: -2px 0 13px black;
     color: #E9C114;
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 36px;
@@ -107,14 +107,15 @@ section {
     }
 }
 
-button {
+a.btn {
     background: #0E2104;
     border: 0 none;
     border-radius: 10px;
     color: white;
     font-size: 24px;
+    margin-bottom: 20px;
     max-width: 90%;
-    padding: 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
     -webkit-appearance: none;
 

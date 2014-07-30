@@ -107,13 +107,13 @@ header img { -webkit-animation: float 1.4s infinite alternate ease; animation: f
 
 @keyframes float { from { -webkit-transform: translate(-50%, -3px); transform: translate(-50%, -3px); }
   to { -webkit-transform: translate(-50%, 13px); transform: translate(-50%, 13px); } }
-section { background: #3A722E; -webkit-box-shadow: -2px 0 13px black; box-shadow: -2px 0 13px black; color: #E9C114; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 36px; font-weight: 300; line-height: 160%; padding: 50px 0; position: relative; text-align: center; z-index: 1; }
+section { background: #3A722E; -webkit-box-shadow: -2px 0 13px black; box-shadow: -2px 0 13px black; color: #E9C114; font-family: 'Open Sans', Helvetica, sans-serif; font-size: 36px; font-weight: 300; line-height: 160%; padding: 50px 0 0; position: relative; text-align: center; z-index: 1; }
 @media all and (max-width: 30em) { section { padding: 20px 0; } }
 section p { margin: 0 auto; max-width: 940px; }
-section > p { margin-bottom: 80px; }
+section > p { margin-bottom: 60px; }
 @media all and (max-width: 40em) { section > p { font-size: 26px; line-height: 180%; margin-bottom: 30px; } }
 @media all and (max-width: 30em) { section > p { font-size: 18px; } }
-section > div { background: #23481F; margin-bottom: 100px; padding: 20px 0; }
+section > div { background: #23481F; padding: 20px 0; }
 @media all and (max-width: 30em) { section > div { margin-bottom: 30px; } }
 section ul { font-size: 18px; line-height: 160%; margin: 0 auto; max-width: 940px; overflow: hidden; }
 @media all and (max-width: 30em) { section ul { font-size: 14px; } }
@@ -121,7 +121,8 @@ section ul li { float: left; padding: 0 15px; width: 33%; }
 @media all and (max-width: 30em) { section ul li { float: none; margin-bottom: 30px; width: 100%; } }
 section ul li img { max-width: 100%; }
 
-a.btn { background: #0E2104; border: 0 none; border-radius: 10px; color: white; font-size: 24px; margin-bottom: 20px; max-width: 90%; padding: 10px 20px; text-transform: uppercase; -webkit-appearance: none; }
+a.btn { background: #0E2104; border: 0 none; border-radius: 10px; color: white; font-size: 24px; margin-bottom: 40px; max-width: 90%; padding: 10px 20px; text-transform: uppercase; -webkit-appearance: none; }
 a.btn:hover { background: #D64C3A; }
+@media all and (max-width: 30em) { a.btn { font-size: 13px; } }
 
 footer { background: #0F1F0F; color: #2B6225; font-size: 11px; line-height: 24px; position: relative; text-align: center; z-index: 1; }

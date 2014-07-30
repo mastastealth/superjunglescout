@@ -50,7 +50,7 @@ section {
     font-size: 36px;
     font-weight: 300;
     line-height: 160%;
-    padding: 50px 0;
+    padding: 50px 0 0;
     position: relative;
     text-align: center;
     z-index: 1;
@@ -63,7 +63,7 @@ section {
     }
 
     > p {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         @include max-break(40em) {
             font-size: 26px;
             line-height: 180%;
@@ -74,7 +74,6 @@ section {
 
     > div {
         background: #23481F;
-        margin-bottom: 100px;
         padding: 20px 0;
 
         @include max-break(30em) { margin-bottom: 30px; }
@@ -113,13 +112,14 @@ a.btn {
     border-radius: 10px;
     color: white;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     max-width: 90%;
     padding: 10px 20px;
     text-transform: uppercase;
     -webkit-appearance: none;
 
     &:hover { background: #D64C3A; }
+    @include max-break(30em) { font-size: 13px; }
 }
 
 footer {

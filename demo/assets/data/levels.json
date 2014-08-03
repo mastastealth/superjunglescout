@@ -1,0 +1,14 @@
+{
+	"levels": [
+		{ 
+			"name" : "emergent",
+			"background": "bgEmergent",
+			"transitionBg" : "bgMenuT"
+		},
+		{ 
+			"name" : "test",
+			"background": "bgTest",
+			"transitionBg" : "bgEmergent"
+		}
+	]
+}

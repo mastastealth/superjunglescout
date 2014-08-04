@@ -42,6 +42,8 @@ header {
     to { transform: translate(-50%,13px); }
 }
 
+.vwrap { margin: 0 auto 20px; max-width: 720px; }
+
 section {
     background: #3A722E;
     box-shadow: -2px 0 13px black;
@@ -72,7 +74,7 @@ section {
         @include max-break(30em) { font-size: 18px; }
     }
 
-    > div {
+    .mid {
         background: #23481F;
         padding: 20px 0;
 
@@ -106,7 +108,7 @@ section {
     }
 }
 
-a.btn {
+a.btn, input[type=submit] {
     background: #0E2104;
     border: 0 none;
     border-radius: 10px;
@@ -116,10 +118,34 @@ a.btn {
     max-width: 90%;
     padding: 10px 20px;
     text-transform: uppercase;
+    transition: all 0.3s;
     -webkit-appearance: none;
 
-    &:hover { background: #D64C3A; }
+    &:hover { background: #D64C3A !important; }
     @include max-break(30em) { font-size: 13px; }
+}
+
+    a.ks.btn { 
+        color: #0E2104; background: #14E06E;
+    }
+
+    a.demo.btn { 
+        color: #010101; background: #E6AB4F;
+    }
+
+#mc_embed_signup {
+    font-size: 22px;
+    padding-bottom: 10px;
+
+    input {
+        display: block;
+        margin: 0 auto 20px;
+        padding: 0 8px;
+
+        &[type=submit] {
+            padding: 10px 20px;
+        }
+    }
 }
 
 footer {

@@ -7,6 +7,7 @@
         <meta name="description" content="An educational web game where kids can explore the jungle, interact and learn about animals!">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
+
     </head>
 
     <body>
@@ -17,9 +18,15 @@
         <section>
             <p>An educational web game where kids can explore the jungle, interact and learn about animals!</p>
 
-            <a href="#" class="btn">Coming Soon to Kickstarter</a>
+            <div class="vwrap">
+                <iframe width="480" height="360" src="https://www.kickstarter.com/projects/mastastealth/super-jungle-scout/widget/video.html" frameborder="0" scrolling="no"> </iframe>
+            </div>
 
-            <div>
+            <a href="https://www.kickstarter.com/projects/mastastealth/super-jungle-scout" class="ks btn">Now on  Kickstarter!</a>
+
+            <a href="/demo" class="demo btn">Try the Demo</a>
+
+            <div class="mid">
                 <ul>
                     <li>
                         <img src="img/tap.png" alt="">
@@ -37,12 +44,26 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//brianfran.us6.list-manage.com/subscribe/post?u=23ac8ba1179d0cc03c17932b5&amp;id=e11e8aa653" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <label for="mce-EMAIL">Subscribe to my list for future updates and stuff!</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_23ac8ba1179d0cc03c17932b5_e11e8aa653" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
         </section>
 
         <footer>
             <a href="//www.brianfran.co">Brian Franco</a> &copy; 2014, All Rights Reserved.
         </footer>
 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,6 +72,10 @@
 
           ga('create', 'UA-36407053-2', 'auto');
           ga('send', 'pageview');
+
+          $(document).ready(function() {
+              $(".vwrap").fitVids();
+          });
         </script>
     </body>
 </html>

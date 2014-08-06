@@ -12,12 +12,13 @@
 	<div id="modal">
 		<button class="close"></button>
 		<aside class="main">
+			<iframe id="player" src="" frameborder="0"></iframe>
 		    <div class="pic"></div>
 		    
 		    <nav>
 		        <a class="btn where"><img src="assets/images/btn_map.png" alt=""></a>
 		        <a href="#" class="btn read" onclick="game.fx.reader.play()"><img src="assets/images/btn_read.png" alt=""></a>
-		        <a href="#" class="btn video" target="_blank"><img src="assets/images/btn_vid.png" alt=""></a>
+		        <a class="btn video" target="_blank"><img src="assets/images/btn_vid.png" alt=""></a>
 		    </nav>
 		</aside>
 		<aside class="info">
@@ -45,6 +46,6 @@
 
 	<script src="js/phaser.min.js"></script>
 	<script src="js/phaser-state-transition.min.js"></script>
-	<script src="js/game.min.js"></script>
+	<script src="js/game.js"></script>
 </body>
 </html>
